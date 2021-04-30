@@ -9,8 +9,6 @@ $mainfont: "Merriweather", serif;
   justify-content: center;
   align-items: center;
 }
-@mixin mobil {
-}
 
 body {
   background-color: $MainColor;
@@ -41,9 +39,11 @@ body {
     border: 1px solid $SecColor;
   }
   .accept {
+    width: 100%;
     color: $SecColor;
     font-size: 2vh;
     @include flex();
+    flex-wrap: wrap;
     input[type="checkbox"] {
       margin-right: 10px;
       color: $buttonColor;
@@ -66,7 +66,7 @@ body {
       background-color: $buttonColor;
       border: 1px solid $Thirdcolor;
       color: white;
-      padding: 15px 32px;
+      padding: 25px 100px;
       text-align: center;
       text-decoration: none;
       font-size: 16px;
@@ -115,5 +115,33 @@ body {
   background-color: $Thirdcolor;
 }
 /* mobil */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  .main-container {
+    width: 60%;
+    .send-button {
+      .sendb {
+        padding: 30px 110px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+      }
+    }
+    .accept {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 3vh;
+      input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .title {
+    display: flex;
+    justify-content: flex-end;
+    h1 {
+      font-size: 5vh;
+    }
+  }
 }

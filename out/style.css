@@ -37,11 +37,13 @@ body {
 }
 
 .main-container .accept {
+  width: 100%;
   color: #138073;
   font-size: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .main-container .accept input[type="checkbox"] {
@@ -72,7 +74,7 @@ body {
   background-color: #39b69f;
   border: 1px solid #ffffff;
   color: white;
-  padding: 15px 32px;
+  padding: 25px 100px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -126,4 +128,31 @@ body {
 }
 
 /* mobil */
+@media (max-width: 1000px) {
+  .main-container {
+    width: 60%;
+  }
+  .main-container .send-button .sendb {
+    padding: 30px 110px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .main-container .accept {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3vh;
+  }
+  .main-container .accept input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+  }
+  .title {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .title h1 {
+    font-size: 5vh;
+  }
+}
 /*# sourceMappingURL=style.css.map */
