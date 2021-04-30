@@ -1,39 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600;700&display=swap");
+$MainColor: #fbb03b;
+$SecColor: #138073;
+$Thirdcolor: #ffffff;
+$buttonColor: #39b69f;
+$mainfont: "Merriweather", serif;
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin mobil {
+}
+
 body {
-  background-color: #fbb03b;
+  background-color: $MainColor;
   padding: 50px;
   margin: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex();
 }
-
 .main-container {
   width: 50%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-container h1 {
-  font-size: 4vh;
-  color: #138073;
-  font-weight: 600;
-}
-
-.main-container input[type="text"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
+  @include flex();
+  h1 {
+    font-size: 4vh;
+    color: $SecColor;
+    font-weight: 600;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: $SecColor;
+  }
 }
 
 /* hamburger */
 .center {
-  background-color: #138073;
+  background-color: $SecColor;
   position: absolute;
   width: 75px;
   height: 75px;
@@ -43,11 +50,10 @@ body {
   border-radius: 40px;
   box-sizing: border-box;
 }
-
 .center:before,
 .center:after,
 .center div {
-  background: #ffffff;
+  background: $Thirdcolor;
   content: "";
   display: block;
   height: 6px;
@@ -55,28 +61,23 @@ body {
   margin: 7px 0;
   transition: 0.5s;
 }
-
 .center:hover:before {
   transform: translateY(12px) rotate(135deg);
 }
-
 .center:hover:after {
   transform: translateY(-12px) rotate(-135deg);
 }
-
 .center:hover div {
   transform: scale(0);
 }
-
 .center:hover {
   cursor: pointer;
 }
-
 .square {
   width: 90%;
   height: 80vh;
-  background-color: #ffffff;
+  background-color: $Thirdcolor;
 }
-
 /* mobil */
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 900px) {
+}
