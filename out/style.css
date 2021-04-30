@@ -11,7 +11,7 @@ body {
 }
 
 .main-container {
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -22,6 +22,7 @@ body {
   font-size: 4vh;
   color: #138073;
   font-weight: 600;
+  text-align: center;
 }
 
 .main-container input[type="text"] {
@@ -29,6 +30,52 @@ body {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+  color: #39b69f;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #138073;
+}
+
+.main-container .accept {
+  color: #138073;
+  font-size: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container .accept input[type="checkbox"] {
+  margin-right: 10px;
+  color: #39b69f;
+  border: 1px solid #138073;
+  width: 20px;
+  height: 20px;
+}
+
+.main-container .accept a {
+  color: #138073;
+  margin-left: 5px;
+}
+
+.main-container .accept a:hover {
+  color: #39b69f;
+}
+
+.main-container .send-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.main-container .send-button .sendb {
+  background-color: #39b69f;
+  border: 1px solid #ffffff;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 /* hamburger */

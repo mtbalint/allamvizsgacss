@@ -21,20 +21,56 @@ body {
   @include flex();
 }
 .main-container {
-  width: 50%;
+  width: 40%;
   height: 100%;
   @include flex();
   h1 {
     font-size: 4vh;
     color: $SecColor;
     font-weight: 600;
+    text-align: center;
   }
   input[type="text"] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    color: $buttonColor;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid $SecColor;
+  }
+  .accept {
     color: $SecColor;
+    font-size: 2vh;
+    @include flex();
+    input[type="checkbox"] {
+      margin-right: 10px;
+      color: $buttonColor;
+      border: 1px solid $SecColor;
+      width: 20px;
+      height: 20px;
+    }
+    a {
+      color: $SecColor;
+      margin-left: 5px;
+    }
+    a:hover {
+      color: $buttonColor;
+    }
+  }
+  .send-button {
+    @include flex();
+    padding-top: 20px;
+    .sendb {
+      background-color: $buttonColor;
+      border: 1px solid $Thirdcolor;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+    }
   }
 }
 
